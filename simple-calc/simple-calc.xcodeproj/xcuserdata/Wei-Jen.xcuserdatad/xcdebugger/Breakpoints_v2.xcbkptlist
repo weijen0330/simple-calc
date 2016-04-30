@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "sample-calc/ViewController.swift"
-            timestampString = "482976880.523524"
+            filePath = "simple-calc/ViewController.swift"
+            timestampString = "483740741.175116"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "number(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,185 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "sample-calc/ViewController.swift"
-            timestampString = "482976880.523524"
+            filePath = "simple-calc/ViewController.swift"
+            timestampString = "483580522.943893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "ButtonPressed(_:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.result.getter : Swift.Double"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580523.50434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.result.setter : Swift.Double"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580523.533899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; simple_calc.ViewController"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580523.534093"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1924">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;simple_calc.ViewController&gt;"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580523.534211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1812">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "simple-calc/ViewController.swift"
+            timestampString = "483580524.235933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.opArray.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580524.238834"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.opArray.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580524.239036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; simple_calc.ViewController"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580524.239194"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1431">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "simple_calc.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;simple_calc.ViewController&gt;"
+                  moduleName = "simple-calc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Wei-Jen/Desktop/INFO%20498/simple-calc/simple-calc/simple-calc/ViewController.swift"
+                  timestampString = "483580524.239313"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1319">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "simple-calc/ViewController.swift"
+            timestampString = "483745920.628389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "factorial(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "simple-calc/ViewController.swift"
+            timestampString = "483750633.585846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "operation(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

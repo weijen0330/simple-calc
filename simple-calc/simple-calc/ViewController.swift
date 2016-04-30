@@ -1,15 +1,14 @@
 //
 //  ViewController.swift
-//  sample-calc
+//  simple-calc
 //
-//  Created by Wei-Jen Chiang on 4/20/16.
+//  Created by Wei-Jen Chiang on 4/21/16.
 //  Copyright © 2016 Wei-Jen Chiang. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var one: UIButton!
     
     @IBOutlet weak var two: UIButton!
@@ -40,6 +39,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var divide: UIButton!
     
+    @IBOutlet weak var mod: UIButton!
+    
     @IBOutlet weak var count: UIButton!
     
     @IBOutlet weak var fact: UIButton!
@@ -50,68 +51,104 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var clear: UIButton!
     
-    let numDict: [String : Double] = [:]
-    let opArray:[String] = ["+", "-", "x", "÷", "%", "count", "avg", "fact"]
-    var result: Double = 0.0
-    var op: String = ""
-    var avgCounter: Int = 0
+    var opArray: [String] = ["+", "-", "x", "÷", "%", "count", "avg"]
+    var result: Double! = nil
+    var lastOp: String = ""
+    var currNumString : String = ""
+    var numCounter : Int = 0
     
-    @IBAction func ButtonPressed(sender: UIButton) {
+    @IBAction func number (sender: UIButton) {
         let button : String = sender.titleLabel!.text!
-        if (opArray.contains(button)) {
-            op = button
-            display.text! = button
-        } else if (button == "=") {
-            op = "="
-            if (button == "fact") {
-                if (floor(result) == result) {
-                    var sum = 1;
-                    for index in 1...Int(result) {
-                        sum *= index
-                    }
-                    result = Double(sum)
-                }
-            }
-            display.text! = String(result)
-        } else if (button == "clear") {
-            op = ""
-            result = 0.0
-            display.text! = "0.0"
-        // If the user pressed a number button
+        /* drops the result of calculation and start a new number */
+        if (lastOp == "=") {
+            currNumString = button
+            lastOp = ""
         } else {
-            if (opArray.contains(display.text!)) {
-                display.text = button
-                switch op {
-                    case "+":
-                        result += Double(display.text!)!
-                    case "-":
-                        result -= Double(display.text!)!
-                    case "x":
-                        result *= Double(display.text!)!
-                    case "÷":
-                        result /= Double(display.text!)!
-                    case "%":
-                        result %= Double(display.text!)!
-                    case "count":
-                        result += 1
-                    case "avg":
-                        avgCounter += 1
-                        result += Double(display.text!)!
-                    default:
-                        result = 0.0
+            currNumString += button
+        }
+        display.text = currNumString
+    }
+
+    @IBAction func reset(sender: UIButton) {
+        result = 0.0
+        lastOp = ""
+        currNumString = ""
+        display.text = "0.0"
+        numCounter = 0
+    }
+    
+    @IBAction func factorial(sender: UIButton) {
+        /* prevents factorial on an operation */
+        if (!opArray.contains(display.text!)) {
+            let target : Int = Int(Double(display.text!)!)
+            var sum : Int = 1
+            if (target > 20) {
+                display.text = "Please enter a smaller number."
+            } else if (target >= 1) {
+                for index in 1...target {
+                    sum *= index
                 }
-                op = ""
-            } else if (display.text! == "0.0" || op == "=") {
-                op = ""
-                display.text = button
-                result = Double(display.text!)!
-            } else {
-                display.text! += button
-                result = Double(display.text!)!
+                result = Double(sum)
+                lastOp = "="
+                currNumString = display.text!
+                display.text = String(result)
             }
         }
     }
-    
+
+    @IBAction func operation(sender: UIButton) {
+        /* For the first operation */
+        if (lastOp == "") {
+            lastOp = sender.titleLabel!.text!
+            display.text = lastOp;
+            result = Double(currNumString)!
+            numCounter += 1
+        /* pressed operation again */
+        } else if (currNumString == "" && opArray.contains(lastOp)) {
+            /* displays error message if user wants to calculate without a number after an operation */
+            if (sender.titleLabel!.text! == "=") {
+                display.text = "Please enter a number or change the operation."
+            /* simply changes to a new operation */
+            } else {
+                lastOp = sender.titleLabel!.text!
+                display.text = lastOp
+            }
+        } else {
+            numCounter += 1
+            switch lastOp {
+                case "+":
+                    result! += Double(currNumString)!
+                case "-":
+                    result! -= Double(currNumString)!
+                case "x":
+                    result! *= Double(currNumString)!
+                case "÷":
+                    result! /= Double(currNumString)!
+                case "%":
+                    result! %= Double(currNumString)!
+                case "count":
+                    result! = Double(numCounter)
+                case "avg":
+                    if (sender.titleLabel!.text! == "=") {
+                       result = (result + Double(currNumString)!) / Double(numCounter)
+                    } else {
+                       result! += Double(currNumString)!
+                    }
+                default:
+                    lastOp = sender.titleLabel!.text!
+            }
+            lastOp = sender.titleLabel!.text!
+            /* if user wants results and pressed = */
+            if (lastOp == "=") {
+                display.text = String(result)
+                numCounter = 0
+            } else {
+                display.text = lastOp
+            }
+        }
+        currNumString = ""
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -121,7 +158,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

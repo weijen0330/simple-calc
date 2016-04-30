@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  sample-calc
+//  simple-calc
 //
-//  Created by Wei-Jen Chiang on 4/20/16.
+//  Created by Wei-Jen Chiang on 4/21/16.
 //  Copyright © 2016 Wei-Jen Chiang. All rights reserved.
 //
 

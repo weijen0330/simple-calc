@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2CBFDDF1CC89AB20097FBED"
-               BuildableName = "sample-calc.app"
-               BlueprintName = "sample-calc"
-               ReferencedContainer = "container:sample-calc.xcodeproj">
+               BlueprintIdentifier = "E25C60541CC9E30E001EABC6"
+               BuildableName = "simple-calc.app"
+               BlueprintName = "simple-calc"
+               ReferencedContainer = "container:simple-calc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2CBFDDF1CC89AB20097FBED"
-            BuildableName = "sample-calc.app"
-            BlueprintName = "sample-calc"
-            ReferencedContainer = "container:sample-calc.xcodeproj">
+            BlueprintIdentifier = "E25C60541CC9E30E001EABC6"
+            BuildableName = "simple-calc.app"
+            BlueprintName = "simple-calc"
+            ReferencedContainer = "container:simple-calc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2CBFDDF1CC89AB20097FBED"
-            BuildableName = "sample-calc.app"
-            BlueprintName = "sample-calc"
-            ReferencedContainer = "container:sample-calc.xcodeproj">
+            BlueprintIdentifier = "E25C60541CC9E30E001EABC6"
+            BuildableName = "simple-calc.app"
+            BlueprintName = "simple-calc"
+            ReferencedContainer = "container:simple-calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2CBFDDF1CC89AB20097FBED"
-            BuildableName = "sample-calc.app"
-            BlueprintName = "sample-calc"
-            ReferencedContainer = "container:sample-calc.xcodeproj">
+            BlueprintIdentifier = "E25C60541CC9E30E001EABC6"
+            BuildableName = "simple-calc.app"
+            BlueprintName = "simple-calc"
+            ReferencedContainer = "container:simple-calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
