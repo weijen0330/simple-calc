@@ -99,10 +99,18 @@ class ViewController: UIViewController {
     @IBAction func operation(sender: UIButton) {
         /* For the first operation */
         if (lastOp == "") {
-            lastOp = sender.titleLabel!.text!
-            display.text = lastOp;
-            result = Double(currNumString)!
-            numCounter += 1
+            if (currNumString == "") {
+                display.text = "Please enter a number first."
+            } else {
+                lastOp = sender.titleLabel!.text!
+                if (sender.titleLabel!.text! == "=") {
+                    display.text = currNumString
+                } else {
+                    display.text = lastOp;
+                }
+                result = Double(currNumString)!
+                numCounter += 1
+            }
         /* pressed operation again */
         } else if (currNumString == "" && opArray.contains(lastOp)) {
             /* displays error message if user wants to calculate without a number after an operation */
